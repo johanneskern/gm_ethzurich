@@ -5,17 +5,16 @@ actionLink: /events/
 
 description: GM Week initiatives are happening all over the world whenever
              there is a large gathering of blockchain and cryptocurrencies enthusiasts
-             around. The Prague GM is no different.
+             around. The Zürich GM is no different.
              This is a voluntary initiative which was formed around the ETHPrague 2022
              and which will provide an overview and support for all the blockchain
-             technology related events happening in Prague between June 3rd and June 12th 2022.
+             technology related events happening in Zürich between April 10th and April 16th 2023.
 
-tagline: 3. June - 12. June 2022
+tagline: 10. April - 16. April 2023
 
 features:
-- title: Paralelni Polis
-  details: The unique crypto-only hacker base which is facilitating a 
-    discussion platform for topics related to tech, art and science.
+- title: UZH – University of Zürich
+  details: The University of Zürich is a public research university located in the city of Zürich, Switzerland. This year, it will be hosting Ethereum Zürich hackathon and a conference.
 
   
 footer:
@@ -34,10 +33,10 @@ footer:
 
 GM Week initiatives are happening all over the world whenever
 there is a large gathering of blockchain and cryptocurrencies enthusiasts
-around. The Prague GM is no different.
+around. The Zürich GM is no different.
 This is a voluntary initiative which was formed around the ETHPrague 2022
 and which will provide an overview and support for all the blockchain
-technology related events happening in Prague between June 3rd and June 12th 2022.
+technology related events happening in Zürich between April 10th and April 16th 2023.
 
-Feel free to reach out contact@ethprague.com if you have any questions.
+Feel free to reach out to contact@pwn.xyz if you have any questions.
 <br />
