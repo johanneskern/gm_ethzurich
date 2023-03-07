@@ -1,26 +1,26 @@
 module.exports = {
   base: "/",
-  title: "Prague GM Events",
-  heading: "GM Prague 2023",
-  subHeading: "1. January - 10. January 2023",
-  calendarHeading: "January 2023",
-  sumbitEventLink: "https://pwn.xyz/",
+  title: "Zürich GM Events",
+  heading: "GM Zürich 2023",
+  subHeading: "10. - 16. April 2023 We're bringing the Ethereum community to the most crypto friendly country and the cradle of blockchain research! This website allows anyone to add and update their side event.",
+  calendarHeading: "April 2023",
+  sumbitEventLink: "https://gmevents.typeform.com/zurich",
   startDate: {
-    day: 1,
-    month: 1,
+    day: 10,
+    month: 4,
     year: 2023,
   },
   endDate: {
-    day: 10,
-    month: 1,
+    day: 16,
+    month: 4,
     year: 2023,
   },
-  daysInFirstMonth: 31,
-  startHour: 9,
-  endHour: 22,
-  duarationInDays: 1,
-  dayNames: ["Sunday"],
-  layout: 1, // 0 - banner layout, 1 - venue layout
+  daysInFirstMonth: 30,
+  startHour: 8,
+  endHour: 24,
+  duarationInDays: 7,
+  dayNames: ["Monday", "Tuesday", "Wednesday" , "Thursday" , "Friday" , "Saturday", "Sunday"],
+  layout: 0, // 0 - banner layout, 1 - venue layout
   bannerPath: "logo_gm_events.svg", // only if banner layout
   venues: [
     {
@@ -55,8 +55,8 @@ module.exports = {
         link: "/calendar/",
       },
       {
-        text: "PWN",
-        link: "https://pwn.xyz/",
+        text: "EthereumZuri.ch",
+        link: "https://ethereumzuri.ch/",
       },
     ],
     logo: "logo_gm_events.svg",
