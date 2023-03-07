@@ -21,7 +21,7 @@ module.exports = {
   duarationInDays: 7,
   dayNames: ["Monday", "Tuesday", "Wednesday" , "Thursday" , "Friday" , "Saturday", "Sunday"],
   layout: 0, // 0 - banner layout, 1 - venue layout
-  bannerPath: "logo_gm_events.svg", // only if banner layout
+  bannerPath: "EthereumZuri.ch.jpg", // only if banner layout
   venues: [
     {
       name: "Paralelni Polis",
