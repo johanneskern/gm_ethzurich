@@ -39,7 +39,7 @@
 </template>
 
 <script lang="ts">
-import DateTime from './Event/DateTime.vue'
+import DateTime from "./Event/DateTime.vue";
 export default {
   components: { DateTime },
   name: "Button",
@@ -49,11 +49,11 @@ export default {
       default: null,
     },
   },
-  data () {
+  data() {
     return {
       isMaximazed: false,
-    }
-  }
+    };
+  },
 };
 </script>
 
@@ -117,4 +117,3 @@ export default {
     &_name
       margin: 0.7rem 0 1.5rem 0
 </style>
-

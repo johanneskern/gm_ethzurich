@@ -14,6 +14,9 @@
       {{ heading }}
     </div>
     <div class="hero-main_headline-date">
+      {{ dateSubheading }}
+    </div>
+    <div class="hero-main_headline-date">
       {{ subheading }}
     </div>
     <Button class="hero-main_button" buttonText="Submit Event" :to="this.config.sumbitEventLink" />
@@ -29,6 +32,7 @@ export default {
   data: () => ({
     heading: config.heading,
     subheading: config.subHeading,
+    dateSubheading: config.dateSubheading,
     config: config,
   }),
 };
@@ -43,18 +47,19 @@ export default {
   flex-direction column
   align-items center
   justify-content center
-  padding 255px 0 0 0
   width 100%
 
   &_headline-date
-    font-size 22px
+    font-size clamp(1rem, calc(-.875rem + 1.8vw),8.5rem)    
     line-height 28px
     margin-bottom 1rem
+    max-width 55rem
+    text-align center
 
   &_headline
     font-size clamp(3rem, calc(-0.875rem + 8.333vw), 10.5rem)
     text-align center
-    max-width 55rem
+    max-width 85rem
     margin-bottom 2rem
 
   &_button
