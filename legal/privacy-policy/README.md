@@ -4,7 +4,7 @@ title: Privacy Policy
 
 # Privacy Policy
 
-The gm.events website provides information about a series of independent events organized by individuals or companies.
+The zurich.gm.events website provides information about a series of independent events organized by individuals or companies.
 
 This page is used to inform website visitors regarding our policies with the
 collection, use, and disclosure of Personal Information if anyone decided to
@@ -12,11 +12,11 @@ use our Service, the gm.events website.
 
 ## Information Collection and Use
 
-We don’t store your data, period.
+We are using Plausible Analytics for collecting the number of visitors on porto.gm.events. Nothing else. Plausible doesn’t use cookies and doesn’t track nor collect any personal data.
 
 ## Cookies
 
-gm.events does not use cookies to collect information.
+zurich.gm.events does not use cookies to collect information.
 
 ## Links to Other Sites
 
@@ -30,4 +30,4 @@ third-party sites or services.
 ## Contact Us
 
 If you have any questions or suggestions about our Privacy Policy, do not
-hesitate to contact us contact@pwn.xyz
+hesitate to contact us at contact@pwn.xyz
