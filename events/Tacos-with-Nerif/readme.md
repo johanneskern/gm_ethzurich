@@ -49,7 +49,6 @@ name: Tacos with Nerif
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   - A legendary Taco night with the Zurich ecosystem.
-  - The price is 0.04 ETH.
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
@@ -70,7 +69,7 @@ tickets: https://tacos.nerif.network
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
-price: 0.05
+price: 0.04 ETH
 
 # The name of the venue where the event will be held. Can be left empty.
 venue: 
