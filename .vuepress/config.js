@@ -2,7 +2,9 @@ module.exports = {
   base: "/",
   title: "Zürich GM Events",
   heading: "GM Zürich 2023",
-  subHeading: "10. - 16. April 2023 We're bringing the Ethereum community to the most crypto friendly country and the cradle of blockchain research! This website allows anyone to add and update their side event.",
+  dateSubheading: "10. - 16. April 2023",
+  subHeading:
+    "We're bringing the Ethereum community to the most crypto friendly country and the cradle of blockchain research! This website allows anyone to add and update their side event.",
   calendarHeading: "April 2023",
   sumbitEventLink: "https://gmevents.typeform.com/zurich",
   startDate: {
@@ -19,7 +21,15 @@ module.exports = {
   startHour: 8,
   endHour: 24,
   duarationInDays: 7,
-  dayNames: ["Monday", "Tuesday", "Wednesday" , "Thursday" , "Friday" , "Saturday", "Sunday"],
+  dayNames: [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ],
   layout: 0, // 0 - banner layout, 1 - venue layout
   bannerPath: "TwitHeader_1500x5002.jpg", // only if banner layout
   venues: [
