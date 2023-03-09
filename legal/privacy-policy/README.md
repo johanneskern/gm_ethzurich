@@ -8,11 +8,11 @@ The zurich.gm.events website provides information about a series of independent 
 
 This page is used to inform website visitors regarding our policies with the
 collection, use, and disclosure of Personal Information if anyone decided to
-use our Service, the gm.events website.
+use our Service, the zurich.gm.events website.
 
 ## Information Collection and Use
 
-We are using Plausible Analytics for collecting the number of visitors on porto.gm.events. Nothing else. Plausible doesn’t use cookies and doesn’t track nor collect any personal data.
+We are using Plausible Analytics for collecting the number of visitors on zurich.gm.events. Nothing else. Plausible doesn’t use cookies and doesn’t track nor collect any personal data.
 
 ## Cookies
 
