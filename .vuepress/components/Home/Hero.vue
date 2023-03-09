@@ -16,7 +16,7 @@
     <div class="hero-main_headline-date">
       {{ dateSubheading }}
     </div>
-    <div class="hero-main_headline-date">
+    <div class="hero-main_headline-paragraph">
       {{ subheading }}
     </div>
     <Button class="hero-main_button" buttonText="Submit Event" :to="this.config.sumbitEventLink" />
@@ -50,6 +50,13 @@ export default {
   width 100%
 
   &_headline-date
+    font-size clamp(2rem, calc(-.875rem + 1.8vw),8.5rem)    
+    line-height 28px
+    margin-bottom 1rem
+    max-width 55rem
+    text-align center
+
+  &_headline-paragraph
     font-size clamp(1rem, calc(-.875rem + 1.8vw),8.5rem)    
     line-height 28px
     margin-bottom 1rem
