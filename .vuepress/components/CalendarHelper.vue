@@ -57,18 +57,32 @@ export default {
       return date.toISOString().replace(/(-|:|\.)/g, '')
     },
     createIcsFile() {
+      console.log('createIcsFile: ')
       const currentDate = new Date(Date.now())
+      console.log('this.event: ', this.event)
       const eventStartDate = new Date(this.event.frontmatter.date)
       const eventEndDate = new Date(this.event.frontmatter.endDate)
 
+      const fixHoursIfNecessary = (hours) => {
+        if (hours === 24) {
+          return 23
+        }
+        return hours
+      }
+
+      const startHours = fixHoursIfNecessary(+this.event.frontmatter.time.split(':')[0])
+      const endHours = fixHoursIfNecessary(+this.event.frontmatter.endTime.split(':')[0])
+
       ics.createEvent( {
         created: [currentDate.getFullYear(), currentDate.getMonth() + 1, currentDate.getDate()],
-        start: [eventStartDate.getFullYear(), eventStartDate.getMonth() + 1, eventStartDate.getDate(), +this.event.frontmatter.time.split(':')[0]],
-        end: [eventEndDate.getFullYear(), eventEndDate.getMonth() + 1, eventEndDate.getDate(), +this.event.frontmatter.endTime.split(':')[0]],
+        start: [eventStartDate.getFullYear(), eventStartDate.getMonth() + 1, eventStartDate.getDate(), startHours],
+        end: [eventEndDate.getFullYear(), eventEndDate.getMonth() + 1, eventEndDate.getDate(), endHours],
         title: this.event.title,
         description: this.event.frontmatter.description,
       }, (error, createdEventString) => {
-        if (error) return
+        if (error) {
+          return
+        }
         const createdEventStringAsBlob = new Blob([createdEventString], { type: 'text/plain;charset=utf-8' })
         saveAs(createdEventStringAsBlob, `${this.event.title}.ics`)
       })
