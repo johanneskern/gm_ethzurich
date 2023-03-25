@@ -14,7 +14,7 @@
     <h1 class="content__title">{{ data.name }}</h1>
   
     <div class="content__date-and-add-to-calendar">
-      <CalendarHelper :event="event" />
+      <CalendarHelper :event="$page" />
       <DateTime :isOneLine="true"/>
     </div>
 
