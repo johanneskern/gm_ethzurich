@@ -70,13 +70,22 @@ export default {
         return hours
       }
 
+      const fixMinutesIfNecessary = (hours, minutes) => {
+        if (hours === 24) {
+          return 59
+        }
+        return minutes
+      }
+
       const startHours = fixHoursIfNecessary(+this.event.frontmatter.time.split(':')[0])
+      const startMinutes = fixMinutesIfNecessary(+this.event.frontmatter.time.split(':')[0], +this.event.frontmatter.time.split(':')[1])
       const endHours = fixHoursIfNecessary(+this.event.frontmatter.endTime.split(':')[0])
+      const endMinutes = fixMinutesIfNecessary(+this.event.frontmatter.endTime.split(':')[0], +this.event.frontmatter.endTime.split(':')[1])
 
       ics.createEvent( {
         created: [currentDate.getFullYear(), currentDate.getMonth() + 1, currentDate.getDate()],
-        start: [eventStartDate.getFullYear(), eventStartDate.getMonth() + 1, eventStartDate.getDate(), startHours],
-        end: [eventEndDate.getFullYear(), eventEndDate.getMonth() + 1, eventEndDate.getDate(), endHours],
+        start: [eventStartDate.getFullYear(), eventStartDate.getMonth() + 1, eventStartDate.getDate(), startHours, startMinutes],
+        end: [eventEndDate.getFullYear(), eventEndDate.getMonth() + 1, eventEndDate.getDate(), endHours, endMinutes],
         title: this.event.title,
         description: this.event.frontmatter.description,
       }, (error, createdEventString) => {
