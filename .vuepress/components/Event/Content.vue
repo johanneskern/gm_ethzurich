@@ -29,13 +29,13 @@
       <Speakers/>
     </div>
 
-    <div class="content__venue"v-if="data.venue || data.address">
+    <div class="content__venue" v-if="data.venue || data.address">
       <h2 v-if="Array.isArray(data.address)">Venues</h2>
       <h2 v-else>Venue</h2>
       <MapLink/>
     </div>
 
-    <div class="content__more-info"v-if="data.tickets">
+    <div class="content__more-info" v-if="data.tickets">
       <h2>More information</h2>
       <TicketsLink/>
     </div>
@@ -55,7 +55,7 @@ import CalendarHelper from '../CalendarHelper.vue'
 const debounce = require('debounce')
 
 export default {
-  components: { DateTime, MapLink, Speakers, Synopsis, TicketsLink, CalendarHelper },
+  components: { DateTime, MapLink, Speakers, Synopsis, TicketsLink, CalendarHelper, Badge },
   computed: {
     data () {
       return this.$page.frontmatter

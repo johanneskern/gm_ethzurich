@@ -4,7 +4,7 @@
       <img
         width="30"
         alt="calendar"
-        src="./../public/calendar.svg">
+        src="../public/calendar.svg">
     </div>
     <div class="calendar-helper__tooltip">
       <div class="calendar-helper__options">
@@ -15,7 +15,7 @@
             <img
               width="20"
               alt="save-calendar"
-              src="./../public/save.svg">
+              src="../public/save.svg">
           </div>
           <span>
             .ics file
@@ -28,7 +28,7 @@
             <img
               width="20"
               alt="google-calendar"
-              src="./../public/google-calendar.svg">
+              src="../public/google-calendar.svg">
           </div>
           <span>
             Google Calendar
@@ -57,11 +57,9 @@ export default {
       return date.toISOString().replace(/(-|:|\.)/g, '')
     },
     createIcsFile() {
-      console.log('createIcsFile: ')
       const currentDate = new Date(Date.now())
-      console.log('this.event: ', this.event)
       const eventStartDate = new Date(this.event.frontmatter.date)
-      const eventEndDate = new Date(this.event.frontmatter.endDate)
+      const eventEndDate = new Date(this.event.frontmatter.endDate || this.event.frontmatter.date)
 
       const fixHoursIfNecessary = (hours) => {
         if (hours === 24) {
@@ -82,10 +80,13 @@ export default {
       const endHours = fixHoursIfNecessary(+this.event.frontmatter.endTime.split(':')[0])
       const endMinutes = fixMinutesIfNecessary(+this.event.frontmatter.endTime.split(':')[0], +this.event.frontmatter.endTime.split(':')[1])
 
+      const address = this.event.frontmatter.address ? this.event.frontmatter.address : ''
+
       ics.createEvent( {
         created: [currentDate.getFullYear(), currentDate.getMonth() + 1, currentDate.getDate()],
         start: [eventStartDate.getFullYear(), eventStartDate.getMonth() + 1, eventStartDate.getDate(), startHours, startMinutes],
         end: [eventEndDate.getFullYear(), eventEndDate.getMonth() + 1, eventEndDate.getDate(), endHours, endMinutes],
+        location: address,
         title: this.event.title,
         description: this.event.frontmatter.description,
       }, (error, createdEventString) => {
@@ -99,12 +100,11 @@ export default {
     createGoogleCalendarEvent() {
       const start = new Date(this.event.frontmatter.date)
       start.setHours(+this.event.frontmatter.time.split(':')[0])
-      const end = new Date(this.event.frontmatter.endDate)
+      const end = new Date(this.event.frontmatter.endDate || this.event.frontmatter.date)
       end.setHours(+this.event.frontmatter.endTime.split(':')[0])
 
       const eventStart = this.formatDateForGoogle(new Date(start))
       const eventEnd = this.formatDateForGoogle(new Date(end))
-
 
       window.open(`https://calendar.google.com/calendar/u/0/r/eventedit?text=${this.event.title}+in+${this.event.frontmatter.venue}&dates=${eventStart}/${eventEnd}&location=${this.event.frontmatter.address ? this.event.frontmatter.address : ''}&details=${this.event.frontmatter.description}`)
     }

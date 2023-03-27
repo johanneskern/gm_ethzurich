@@ -46,8 +46,10 @@
 <script lang="ts">
 import CalendarHelper from "./CalendarHelper.vue";
 import DateTime from "./Event/DateTime.vue";
+import Badge from '../theme/Badge.vue'
+
 export default {
-  components: { DateTime, CalendarHelper },
+  components: { DateTime, CalendarHelper, Badge },
   name: "EventPreview",
   props: {
     event: {
