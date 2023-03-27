@@ -6,7 +6,7 @@
         <div class="event-preview_date-add-to-calendar-and-event-time">
           <DateTime :date="event.frontmatter.date" :endDate="event.frontmatter.endDate" :time="event.frontmatter.time"
             :endTime="event.frontmatter.endTime"/>
-          <CalendarHelper :event="event" />
+          <CalendarHelper :event="event" class="event-preview_calendar-helper"/>
         </div>
         <Badge slot="after" :text="event.frontmatter.category" />
 
@@ -25,7 +25,7 @@
       <div class="event-preview_content">
         <!-- Event's name -->
         <h2 class="event-preview_name">
-          <a class="event-preview_name-link":href="$withBase(event.path)">{{ event.frontmatter.name }}</a>
+          <a class="event-preview_name-link" :href="$withBase(event.path)">{{ event.frontmatter.name }}</a>
         </h2>
         
         <!-- Event's description -->
@@ -124,7 +124,10 @@ export default {
       margin: 0.7rem 0 1.5rem 0
 .event-preview_date-add-to-calendar-and-event-time
   display flex
-  align-items center
+  // align-items center
   flex-wrap: wrap;
   gap 0.5rem
+
+.event-preview_calendar-helper
+  margin-top 1.5rem
 </style>
