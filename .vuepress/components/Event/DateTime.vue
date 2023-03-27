@@ -63,7 +63,7 @@ export default {
       let year = date.getUTCFullYear()
 
       // The full date
-      let datetime = `${day}, ${date.getUTCDate()}`
+      let datetime = `${day} ${date.getUTCDate()}`
 
       // Last date of the event
       let endDate = this.endDate || this.$page.frontmatter.endDate
@@ -73,7 +73,7 @@ export default {
         endDate = new Date(endDate)
         if (endDate.toJSON() !== date.toJSON()) {
           day = this.dayNames[endDate.getUTCDay()]
-          datetime += ` - ${day}, ${endDate.getUTCDate()}`
+          datetime += ` - ${day} ${endDate.getUTCDate()}`
         }
       }
 

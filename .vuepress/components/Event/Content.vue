@@ -12,7 +12,11 @@
     </div>
 
     <h1 class="content__title">{{ data.name }}</h1>
-    <DateTime :isOneLine="true"/>
+  
+    <div class="content__date-and-add-to-calendar">
+      <CalendarHelper :event="$page" />
+      <DateTime :isOneLine="true"/>
+    </div>
 
     <div class="category">
       <Badge :text="capitalizeWord(data.category)"/>
@@ -25,13 +29,13 @@
       <Speakers/>
     </div>
 
-    <div class="content__venue"v-if="data.venue || data.address">
+    <div class="content__venue" v-if="data.venue || data.address">
       <h2 v-if="Array.isArray(data.address)">Venues</h2>
       <h2 v-else>Venue</h2>
       <MapLink/>
     </div>
 
-    <div class="content__more-info"v-if="data.tickets">
+    <div class="content__more-info" v-if="data.tickets">
       <h2>More information</h2>
       <TicketsLink/>
     </div>
@@ -47,10 +51,11 @@ import TicketsLink from './TicketsLink'
 import { capitalizeWord } from './../../theme/util.js'
 import Button from '../Button.vue'
 import Badge from '../../theme/Badge.vue'
+import CalendarHelper from '../CalendarHelper.vue'
 const debounce = require('debounce')
 
 export default {
-  components: { DateTime, MapLink, Speakers, Synopsis, TicketsLink },
+  components: { DateTime, MapLink, Speakers, Synopsis, TicketsLink, CalendarHelper, Badge },
   computed: {
     data () {
       return this.$page.frontmatter
@@ -156,5 +161,10 @@ h2
   flex-wrap wrap
   gap 1rem
 
+.content__date-and-add-to-calendar
+  display flex
+  justify-content center
+  align-items center
+  gap 0.5rem
 
 </style>
