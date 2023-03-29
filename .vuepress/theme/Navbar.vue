@@ -99,7 +99,7 @@ export default {
 
 @media (max-width: $MQMobile)
   .navbar
-    padding 0.9rem 1.5rem
+    padding 1.3rem 1.5rem
     .links
       right 3.5rem
     .logo
