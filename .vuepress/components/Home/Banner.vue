@@ -25,7 +25,7 @@ export default {
   display flex
   align-items center
   justify-content center
-  padding-top 7rem
+  padding-top $navbarHeight + 1.4rem
 
   &_img
     width 100%
