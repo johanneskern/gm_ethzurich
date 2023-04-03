@@ -342,7 +342,7 @@ table
     margin-top 100px
   .hero
     width 100%
-    top $navbarHeight
+    padding-top $navbarHeight
     left 0
     pointer-events none
     position fixed
