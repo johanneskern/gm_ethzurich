@@ -254,7 +254,6 @@ table
   margin 0 0 2em
   position relative
   z-index 4
-  padding-top 10rem
   thead
     transition $headersTransition
     z-index 3
