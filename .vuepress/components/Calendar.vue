@@ -254,6 +254,7 @@ table
   margin 0 0 2em
   position relative
   z-index 4
+  padding-top 10rem
   thead
     transition $headersTransition
     z-index 3
@@ -342,7 +343,7 @@ table
     margin-top 100px
   .hero
     width 100%
-    top $navbarHeight
+    padding-top $navbarHeight
     left 0
     pointer-events none
     position fixed
