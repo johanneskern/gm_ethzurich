@@ -78,7 +78,7 @@ venue: University of Zürich
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: Rämistrasse 71, 8006 Zürich, Switzerland
+address: Häldeliweg 2, 8044 Zürich
 
 # The category of the event. Valid options:
 # - conference
