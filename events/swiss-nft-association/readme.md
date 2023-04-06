@@ -28,7 +28,7 @@
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: Swiss NFT Association X Ethereum Zurich
+title: SWISS NFT ASSOCIATION
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
@@ -40,7 +40,7 @@ description: Join us for a great networking event to warm up the Ethereum Zurich
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: Swiss NFT Association X Ethereum Zurich
+name: SWISS NFT ASSOCIATION
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
