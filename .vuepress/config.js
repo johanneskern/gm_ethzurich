@@ -2,7 +2,7 @@ module.exports = {
   base: "/",
   title: "Zürich GM Events",
   heading: "GM Zürich 2023",
-  dateSubheading: "10. - 19. April 2023",
+  dateSubheading: "10. - 20. April 2023",
   subHeading:
     "We're bringing the Ethereum community to the most crypto friendly country and the cradle of blockchain research! This website allows anyone to add and update their side event.",
   calendarHeading: "April 2023",
@@ -13,7 +13,7 @@ module.exports = {
     year: 2023,
   },
   endDate: {
-    day: 19,
+    day: 20,
     month: 4,
     year: 2023,
   },
@@ -32,6 +32,7 @@ module.exports = {
     "Monday",
     "Tuesday",
     "Wednesday",
+    "Thursday",
   ],
   layout: 0, // 0 - banner layout, 1 - venue layout
   bannerPath: "TwitHeader_1500x5002.jpg", // only if banner layout
