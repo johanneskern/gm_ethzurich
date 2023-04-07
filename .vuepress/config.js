@@ -2,7 +2,7 @@ module.exports = {
   base: "/",
   title: "Zürich GM Events",
   heading: "GM Zürich 2023",
-  dateSubheading: "10. - 16. April 2023",
+  dateSubheading: "10. - 19. April 2023",
   subHeading:
     "We're bringing the Ethereum community to the most crypto friendly country and the cradle of blockchain research! This website allows anyone to add and update their side event.",
   calendarHeading: "April 2023",
@@ -13,14 +13,14 @@ module.exports = {
     year: 2023,
   },
   endDate: {
-    day: 16,
+    day: 19,
     month: 4,
     year: 2023,
   },
   daysInFirstMonth: 30,
   startHour: 8,
   endHour: 24,
-  duarationInDays: 7,
+  duarationInDays: 10,
   dayNames: [
     "Monday",
     "Tuesday",
