@@ -379,6 +379,13 @@ table
             span
               writing-mode vertical-rl
               transform rotate(180deg)
+              
+@media(min-width: 64em)
+  table
+    padding-top 8rem
+  .calendar_hero
+    margin-top 3rem
+
 
 .calendar_hero
   font-size 3rem
