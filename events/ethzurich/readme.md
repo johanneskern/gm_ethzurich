@@ -71,7 +71,7 @@ tickets: https://ethereumzuri.ch/
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
-price: 0
+price: €151
 
 # The name of the venue where the event will be held. Can be left empty.
 venue: University of Zürich
