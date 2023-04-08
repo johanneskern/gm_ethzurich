@@ -8,89 +8,103 @@
 <template>
   <div class="content__container">
     <div class="content__button-back-to-events-container">
-      <Button buttonText="Back to events" to="/events/" extensionalClass="content__button-back-to-events"/>
+      <Button
+        buttonText="Back to events"
+        to="/events/"
+        extensionalClass="content__button-back-to-events"
+      />
     </div>
 
     <h1 class="content__title">{{ data.name }}</h1>
-  
+
     <div class="content__date-and-add-to-calendar">
       <CalendarHelper :event="$page" />
-      <DateTime :isOneLine="true"/>
+      <DateTime :isOneLine="true" />
     </div>
 
     <div class="category">
-      <Badge :text="capitalizeWord(data.category)"/>
+      <Badge :text="capitalizeWord(data.category)" />
     </div>
 
-    <Synopsis/>
+    <Synopsis />
 
     <div v-if="data.speakers && data.speakers.length > 0">
-      <h2>Speakers</h2>
-      <Speakers/>
+      <h1>Speakers</h1>
+      <div v-for="speaker in data.speakers" :key="speaker.name">
+        <h3>{{ speaker }}</h3>
+      </div>
     </div>
 
     <div class="content__venue" v-if="data.venue || data.address">
       <h2 v-if="Array.isArray(data.address)">Venues</h2>
       <h2 v-else>Venue</h2>
-      <MapLink/>
+      <MapLink />
     </div>
 
     <div class="content__more-info" v-if="data.tickets">
       <h2>More information</h2>
-      <TicketsLink/>
+      <TicketsLink />
     </div>
   </div>
 </template>
 
 <script>
-import DateTime from './DateTime'
-import MapLink from './MapLink'
-import Speakers from './Speakers'
-import Synopsis from './Synopsis'
-import TicketsLink from './TicketsLink'
-import { capitalizeWord } from './../../theme/util.js'
-import Button from '../Button.vue'
-import Badge from '../../theme/Badge.vue'
-import CalendarHelper from '../CalendarHelper.vue'
-const debounce = require('debounce')
+import DateTime from "./DateTime";
+import MapLink from "./MapLink";
+import Speakers from "./Speakers";
+import Synopsis from "./Synopsis";
+import TicketsLink from "./TicketsLink";
+import { capitalizeWord } from "./../../theme/util.js";
+import Button from "../Button.vue";
+import Badge from "../../theme/Badge.vue";
+import CalendarHelper from "../CalendarHelper.vue";
+const debounce = require("debounce");
 
 export default {
-  components: { DateTime, MapLink, Speakers, Synopsis, TicketsLink, CalendarHelper, Badge },
+  components: {
+    DateTime,
+    MapLink,
+    Speakers,
+    Synopsis,
+    TicketsLink,
+    CalendarHelper,
+    Badge,
+  },
   computed: {
-    data () {
-      return this.$page.frontmatter
+    data() {
+      return this.$page.frontmatter;
     },
 
-    debounce () {
-      return debounce(setContentOffset, 100)
-    }
+    debounce() {
+      return debounce(setContentOffset, 100);
+    },
   },
   methods: {
-    capitalizeWord (word) {
-      return capitalizeWord(word)
-    }
+    capitalizeWord(word) {
+      return capitalizeWord(word);
+    },
   },
-  mounted () {
-    window.addEventListener('load', this.debounce)
-    window.addEventListener('resize', this.debounce)
+  mounted() {
+    window.addEventListener("load", this.debounce);
+    window.addEventListener("resize", this.debounce);
   },
-  destroyed () {
-    window.removeEventListener('load', this.debounce)
-    window.removeEventListener('resize', this.debounce)
-  }
-}
+  destroyed() {
+    window.removeEventListener("load", this.debounce);
+    window.removeEventListener("resize", this.debounce);
+  },
+};
 
 const setContentOffset = function () {
-  let header = document.querySelector('header')
-  let hero = document.querySelector('.hero')
-  let category = document.querySelector('.category')
+  let header = document.querySelector("header");
+  let hero = document.querySelector(".hero");
+  let category = document.querySelector(".category");
 
-  if (!header || !hero || !category) return
+  if (!header || !hero || !category) return;
 
-  let offset = header.offsetHeight + hero.offsetHeight
+  let offset = header.offsetHeight + hero.offsetHeight;
 
-  category.style.marginTop = `${offset}px`
-}
+  category.style.marginTop = `${offset}px`;
+};
 </script>
 
 <style lang="stylus">
@@ -150,7 +164,7 @@ h2
   align-items: center;
   flex-wrap: wrap;
   gap 1rem
-  
+
   p
     margin 0
 
@@ -166,5 +180,4 @@ h2
   justify-content center
   align-items center
   gap 0.5rem
-
 </style>
