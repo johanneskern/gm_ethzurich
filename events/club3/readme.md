@@ -28,7 +28,7 @@
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: Club3 tech meetup: zk Rollups | powered by very early
+title: Club3 tech meetup - zk Rollups | powered by very early
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
@@ -40,7 +40,7 @@ description: Join Jordi Baylina (Co-founder Hermez, Technical Lead Polygon zkEVM
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: Club3 tech meetup: zk Rollups | powered by very early
+name: Club3 tech meetup - zk Rollups | powered by very early
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
