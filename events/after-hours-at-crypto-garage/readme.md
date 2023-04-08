@@ -48,7 +48,7 @@ name: EthereumZüri.ch After Hours at the Crypto Garage
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
-  - EthereumZüri.ch is shaping up to be a major conference, featuring over 60 speakers and 500 attendees. It’s also a jam-packed program. After a full day of presentations, workshops, and panels, many will be looking for a place to unwind and recharge. That’s where EthereumZüri.ch After Hours comes in! 
+  - EthereumZüri.ch is shaping up to be a major conference, featuring over 90 speakers and 500 attendees. It’s also a jam-packed program. After a full day of presentations, workshops, and panels, many will be looking for a place to unwind and recharge. That’s where EthereumZüri.ch After Hours comes in! 
   - If you are attending on 15 April (or just happen to be in town), then the Enterprise Ethereum Alliance and MME (the law firm known for helping organise the original Ethereum crowd sale), along with our co-sponsors HOPR and the Multichain Asset Managers Association, would be delighted to have you join us at the Crypto Garage for a relaxed after-conference get-together. With a live DJ providing a soothing soundtrack, drinks to quench your thirst, and delectable Web3 pizza (the kind you can eat), it should be just the atmosphere to relax in while meeting conference speakers, fellow attendees, and members of the Swiss Ethereum and blockchain scene. 
   - The Crypto Garage, a converted automobile garage renowned for hosting crypto events, is located in Zürich’s Seefeld neighbourhood, not far from the conference venue and close to the Lake of Zürich. It's also within walking distance of Zürich's Niederdorf party mile if you care to continue your night out after the party ends. We do hope to see you there! But please register early, capacity is limited.
 
@@ -74,11 +74,11 @@ tickets: https://www.eventbrite.ch/e/ethereumzuri-after-hours-at-the-crypto-gara
 price: 0
 
 # The name of the venue where the event will be held. Can be left empty.
-venue: Crypto Garage
+venue: TBA
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: Eisengasse 9 8008 Zürich
+address: 
 
 # The category of the event. Valid options:
 # - conference
