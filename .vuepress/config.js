@@ -20,7 +20,7 @@ module.exports = {
   daysInFirstMonth: 30,
   startHour: 8,
   endHour: 24,
-  duarationInDays: 10,
+  duarationInDays: 11,
   dayNames: [
     "Monday",
     "Tuesday",
