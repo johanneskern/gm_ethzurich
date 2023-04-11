@@ -28,7 +28,7 @@
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: Tacos with Nerif
+title: Tacos with Nerif & frens
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
@@ -48,7 +48,7 @@ name: Tacos with Nerif
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
-  - Join us for an evening of networking, fun, tacos and margaritas, organized by Nerif. You will receive the location of this secret event after having minted the NFT ticket. Zurich edition.
+  - Join us for an evening of networking, fun, tacos and margaritas, organized by Nerif and co-hosted by GSR and Aktionariat. You will receive the location of this secret event after having minted the NFT ticket. Zurich edition.
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
